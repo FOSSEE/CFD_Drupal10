@@ -39,7 +39,20 @@
         "drupal/token": "^1.16",
         "drupal/views_migration": "^1.0",
         "drupal/webform": "^6.2",
-        "drush/drush": "^13.7"
+        "drush/drush": "^12.5",
+        "drupal/flexslider": "^3.0@alpha",
+        "drupal/git_deploy": "^2.6",
+        "drupal/libraries": "^4.1",
+        "drupal/mahi": "^1.1",
+        "drupal/masquerade": "^2.0",
+        "drupal/mathjax": "^4.1",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/nava": "^1.0",
+        "drupal/rdf": "^3.0@beta",
+        "drupal/scheduled_maintenance": "^2.0",
+        "drupal/spambot": "^1.4",
+        "drupal/views_slideshow": "^5.0",
+        "drupal/xmlsitemap": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
