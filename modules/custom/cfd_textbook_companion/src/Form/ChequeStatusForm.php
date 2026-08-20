@@ -267,13 +267,13 @@ class ChequeStatusForm extends FormBase {
         '#type' => 'textfield',
         '#default_value' => $chq1,
         '#title' => t('Cheque No'),
-        '#size' => 54,
+        // '#size' => 54,
       ];
       $form['tea_cheque_details']['cheque_no_t'] = [
         '#type' => 'textfield',
         '#default_value' => $chq17,
         '#title' => t('Cheque No'),
-        '#size' => 54,
+        // '#size' => 54,
       ];
       $form['perm_cheque_address']['chq_address'] = [
         '#type' => 'textarea',
@@ -285,34 +285,34 @@ class ChequeStatusForm extends FormBase {
         '#type' => 'textfield',
         '#default_value' => $chq7,
         '#title' => t('City'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['perm_cheque_address']['perm_city']['#attributes']['readonly'] = 'readonly';
       $form['perm_cheque_address']['perm_state'] = [
         '#type' => 'textfield',
         '#default_value' => $chq8,
         '#title' => t('State'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['perm_cheque_address']['perm_state']['#attributes']['readonly'] = 'readonly';
       $form['perm_cheque_address']['perm_pincode'] = [
         '#type' => 'textfield',
         '#default_value' => $chq9,
         '#title' => t('Zip code'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['perm_cheque_address']['perm_pincode']['#attributes']['readonly'] = 'readonly';
       $form['stu_cheque_details']['cheq_amt'] = [
         '#type' => 'textfield',
         '#default_value' => $chq3,
         '#title' => t('Cheque Amount'),
-        '#size' => 54,
+        // '#size' => 54,
       ];
       $form['tea_cheque_details']['cheq_amt_t'] = [
         '#type' => 'textfield',
         '#default_value' => $chq17,
         '#title' => t('Cheque Amount'),
-        '#size' => 54,
+        // '#size' => 54,
       ];
       $form['temp_cheque_address']['temp_chq_address'] = [
         '#type' => 'textarea',
@@ -324,21 +324,21 @@ class ChequeStatusForm extends FormBase {
         '#type' => 'textfield',
         '#default_value' => $chq12,
         '#title' => t('City'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['temp_cheque_address']['temp_city']['#attributes']['readonly'] = 'readonly';
       $form['temp_cheque_address']['temp_state'] = [
         '#type' => 'textfield',
         '#default_value' => $chq13,
         '#title' => t('State'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['temp_cheque_address']['temp_state']['#attributes']['readonly'] = 'readonly';
       $form['temp_cheque_address']['temp_pincode'] = [
         '#type' => 'textfield',
         '#default_value' => $chq14,
         '#title' => t('Zipcode'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['temp_cheque_address']['temp_pincode']['#attributes']['readonly'] = 'readonly';
     }
@@ -362,19 +362,19 @@ class ChequeStatusForm extends FormBase {
         '#type' => 'textfield',
         '#default_value' => $chq7,
         '#title' => t('City'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['perm_cheque_address']['perm_state'] = [
         '#type' => 'textfield',
         '#default_value' => $chq8,
         '#title' => t('State'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['perm_cheque_address']['perm_pincode'] = [
         '#type' => 'textfield',
         '#default_value' => $chq9,
         '#title' => t('Zip code'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['perm_cheque_address']['same_address'] = [
         '#type' => 'checkbox',
@@ -402,19 +402,19 @@ class ChequeStatusForm extends FormBase {
         '#type' => 'textfield',
         '#default_value' => $chq12,
         '#title' => t('City'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['temp_cheque_address']['temp_state'] = [
         '#type' => 'textfield',
         '#default_value' => $chq13,
         '#title' => t('State'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['temp_cheque_address']['temp_pincode'] = [
         '#type' => 'textfield',
         '#default_value' => $chq14,
         '#title' => t('Zip code'),
-        '#size' => 35,
+        // '#size' => 35,
       ];
       $form['temp_cheque_address']['same_address'] = [
         '#type' => 'checkbox',
@@ -448,7 +448,7 @@ class ChequeStatusForm extends FormBase {
     ];
     $form['commentf']['comment_cheque'] = [
       '#type' => 'textarea',
-      '#size' => 35,
+      // '#size' => 35,
       '#attributes' => [
         'id' => 'comment'
         ],

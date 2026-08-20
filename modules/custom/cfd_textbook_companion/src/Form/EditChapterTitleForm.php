@@ -108,7 +108,7 @@ class EditChapterTitleForm extends FormBase {
     $form['chapter_title'] = [
       '#type' => 'textfield',
       '#title' => t('Title of the Chapter'),
-      '#size' => 40,
+      // '#size' => 40,
       '#maxlength' => 255,
       '#required' => TRUE,
       '#default_value' => $chapter_data->name,

@@ -1,0 +1,182 @@
+cfd_coursework_project.add_project_title_form:
+  path: /coursework-project/add-project-title
+  defaults:
+    _title: 'Add new project titles'
+    _form: \Drupal\cfd_coursework_project\Form\AddProjectTitleForm
+  requirements:
+    _permission: 'Coursework Project add project titles'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.proposal_form:
+  path: /coursework-project/proposal
+  defaults:
+    _title: 'Coursework Project Proposal Form'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectProposalForm
+  requirements:
+    _permission: 'Coursework Project create proposal'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.proposal_pending:
+  path: /coursework-project/manage-proposal/pending
+  defaults:
+    _title: 'Pending Proposals'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::cfd_coursework_project_proposal_pending'
+  requirements:
+    _permission: 'Coursework Project manage proposal'
+cfd_coursework_project.proposal_all:
+  path: /coursework-project/manage-proposal/all
+  defaults:
+    _title: 'All Proposals'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::cfd_coursework_project_proposal_all'
+  requirements:
+    _permission: 'Coursework Project manage proposal'
+cfd_coursework_project.proposal_edit_file_all:
+  path: /coursework-project/manage-proposal/edit-upload-file
+  defaults:
+    _title: 'Edit code files'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::cfd_coursework_project_proposal_edit_file_all'
+  requirements:
+    _permission: 'Coursework Project manage proposal'
+cfd_coursework_project.proposal_approval_form:
+  path: /coursework-project/manage-proposal/approve/{id?}
+  defaults:
+    _title: 'Approve Proposal'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectProposalApprovalForm
+  requirements:
+    _permission: 'Coursework Project manage proposal'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.proposal_edit_form:
+  path: /coursework-project/manage-proposal/edit
+  defaults:
+    _title: 'Edit Proposal'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectProposalEditForm
+  requirements:
+    _permission: 'Coursework Project manage proposal'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.proposal_status_form:
+  path: /coursework-project/manage-proposal/status
+  defaults:
+    _title: 'Proposal Status'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectProposalStatusForm
+  requirements:
+    _permission: 'Coursework Project approve proposal'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.abstract_bulk_approval_form:
+  path: /coursework-project/abstract-approval/bulk
+  defaults:
+    _title: 'Manage Coursework Project Submissions'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectAbstractBulkApprovalForm
+  requirements:
+    _permission: 'Coursework Project bulk manage abstract'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.edit_upload_abstract_code_form:
+  path: /coursework-project/abstract-code/edit-upload-files
+  defaults:
+    _title: 'Coursework Project Directory edit uploaded files for proposal'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectEditUploadAbstractCodeForm
+  requirements:
+    _permission: 'Coursework Project upload abstract'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.abstract:
+  path: /coursework-project/abstract-code
+  defaults:
+    _title: 'Coursework Project Submissions'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::cfd_coursework_project_abstract'
+  requirements:
+    _permission: 'Coursework Project upload abstract'
+cfd_coursework_project.upload_abstract_code_form:
+  path: /coursework-project/abstract-code/upload
+  defaults:
+    _title: 'Coursework Project Submissions'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectUploadAbstractCodeForm
+  requirements:
+    _permission: 'Coursework Project upload abstract'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.download_full_project:
+  path: /coursework-project/full-download/project
+  defaults:
+    _title: 'Code Download'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::cfd_coursework_project_download_full_project'
+  requirements:
+    _permission: 'Coursework Project download code'
+cfd_coursework_project.completed_proposals_all:
+  path: /coursework-project/completed-coursework-projects
+  defaults:
+    _title: 'Completed Coursework projects'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::cfd_coursework_project_completed_proposals_all'
+  requirements:
+    _permission: 'Coursework Project download code'
+cfd_coursework_project.progress_all:
+  path: /coursework-project/coursework-project-progress
+  defaults:
+    _title: 'Coursework projects in Progress'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::cfd_coursework_project_progress_all'
+  requirements:
+    _permission: 'Coursework Project download code'
+cfd_coursework_project.list_of_available_project_titles:
+  path: /coursework-project/list-of-project-titles
+  defaults:
+    _title: 'List of available Project titles'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::list_of_available_project_titles'
+  requirements:
+    _permission: 'Coursework Project titles list'
+cfd_coursework_project.run_form:
+  path: /coursework-project/coursework-project-run/{id?}
+  defaults:
+    _title: 'Download Codes'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectRunForm
+  requirements:
+    _permission: 'Coursework Project download code'
+  options:
+    no_cache: TRUE
+cfd_coursework_project.download_coursework_project_title_files:
+  path: /coursework-project/download/project-title-file
+  defaults:
+    _title: 'Download Project Title file'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::download_coursework_project_title_files'
+  requirements:
+    _permission: 'Coursework Project download code'
+cfd_coursework_project.project_files:
+  path: /coursework-project/download/project-file/{proposal_id}
+  defaults:
+    _title: 'Download Project file'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::cfd_coursework_project_files'
+  requirements:
+    _permission: 'Coursework Project download code'
+cfd_coursework_project.settings_form:
+  path: /admin/settings/coursework-project
+  defaults:
+    _title: 'Coursework Project Settings'
+    _form: \Drupal\cfd_coursework_project\Form\CfdCourseworkProjectSettingsForm
+  requirements:
+    _permission: 'administer Coursework Project'
+  options:
+    no_cache: TRUE
+cfd_coursework_project._list_coursework_project_certificates:
+  path: /coursework-project/certificates
+  defaults:
+    _title: 'List of Coursework Project Certificates'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::_list_coursework_project_certificates'
+  requirements:
+    _permission: 'list Coursework Project certificates'
+cfd_coursework_project.generate_pdf:
+  path: /coursework-project/certificates/generate-pdf
+  defaults:
+    _title: 'Download Certificate'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::generatePdf'
+  requirements:
+    _permission: 'Coursework Project generate PDF'
+cfd_coursework_project.verify_certificates_verify_certificates:
+  path: /coursework-project/certificates/verify
+  defaults:
+    qr_code: verify_certificates
+    _title: 'Certificate Verification'
+    _controller: '\Drupal\cfd_coursework_project\Controller\DefaultController::verify_certificates'
+  requirements:
+    _permission: 'Coursework Project verify certificates'

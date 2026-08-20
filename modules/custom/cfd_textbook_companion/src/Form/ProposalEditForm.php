@@ -72,7 +72,7 @@ class ProposalEditForm extends FormBase {
     $form['full_name'] = [
       '#type' => 'textfield',
       '#title' => t('Full Name'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 50,
       '#required' => TRUE,
       '#default_value' => $proposal_data->full_name,
@@ -80,14 +80,14 @@ class ProposalEditForm extends FormBase {
     $form['email_id'] = [
       '#type' => 'textfield',
       '#title' => t('Email'),
-      '#size' => 30,
+      // '#size' => 30,
       '#value' => $user_data->mail,
       '#disabled' => TRUE,
     ];
     $form['mobile'] = [
       '#type' => 'textfield',
       '#title' => t('Mobile No.'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 15,
       '#required' => TRUE,
       '#default_value' => $proposal_data->mobile,
@@ -109,7 +109,7 @@ class ProposalEditForm extends FormBase {
     $form['course'] = [
       '#type' => 'textfield',
       '#title' => t('Course'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 50,
       '#required' => TRUE,
       '#default_value' => $proposal_data->course,
@@ -124,7 +124,7 @@ class ProposalEditForm extends FormBase {
     $form['university'] = [
       '#type' => 'textfield',
       '#title' => t('University/ Institute'),
-      '#size' => 80,
+      // '#size' => 80,
       '#maxlength' => 200,
       '#required' => TRUE,
       '#attributes' => [
@@ -147,7 +147,7 @@ class ProposalEditForm extends FormBase {
     $form['other_country'] = [
       '#type' => 'textfield',
       '#title' => t('Other than India'),
-      '#size' => 100,
+      // '#size' => 100,
       '#attributes' => [
         'placeholder' => t('Enter your country name')
         ],
@@ -163,7 +163,7 @@ class ProposalEditForm extends FormBase {
     $form['other_state'] = [
       '#type' => 'textfield',
       '#title' => t('State other than India'),
-      '#size' => 100,
+      // '#size' => 100,
       '#default_value' => $proposal_data->state,
       '#attributes' => [
         'placeholder' => t('Enter your state/region name')
@@ -179,7 +179,7 @@ class ProposalEditForm extends FormBase {
     $form['other_city'] = [
       '#type' => 'textfield',
       '#title' => t('City other than India'),
-      '#size' => 100,
+      // '#size' => 100,
       '#default_value' => $proposal_data->city,
       '#attributes' => [
         'placeholder' => t('Enter your city name')
@@ -225,7 +225,7 @@ class ProposalEditForm extends FormBase {
     $form['pincode'] = [
       '#type' => 'textfield',
       '#title' => t('Pincode'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 6,
       '#required' => FALSE,
       '#default_value' => $proposal_data->pincode,
@@ -241,7 +241,7 @@ class ProposalEditForm extends FormBase {
     $form['faculty'] = [
       '#type' => 'hidden',
       '#title' => t('College Teacher/Professor'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 100,
       '#required' => TRUE,
       '#default_value' => $proposal_data->faculty,
@@ -249,7 +249,7 @@ class ProposalEditForm extends FormBase {
     $form['reviewer'] = [
       '#type' => 'hidden',
       '#title' => t('Reviewer'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 100,
       '#default_value' => $proposal_data->reviewer,
     ];
@@ -257,21 +257,21 @@ class ProposalEditForm extends FormBase {
       '#type' => 'textfield',
       '#title' => t('Expected Date of Completion'),
       '#description' => t('Input date format should be DD-MM-YYYY. Eg: 23-03-2011'),
-      '#size' => 10,
+      // '#size' => 10,
       '#maxlength' => 10,
       '#default_value' => date('d-m-Y', $proposal_data->completion_date),
     ];
     $form['version'] = [
       '#type' => 'textfield',
       '#title' => t('CFD Version'),
-      '#size' => 10,
+      // '#size' => 10,
       '#maxlength' => 20,
       '#default_value' => $proposal_data->version,
     ];
     $form['operating_system'] = [
       '#type' => 'textfield',
       '#title' => t('Operating System'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 50,
       '#default_value' => $proposal_data->operating_system,
     ];
@@ -284,7 +284,7 @@ class ProposalEditForm extends FormBase {
     $form['preference1']['book1'] = [
       '#type' => 'textfield',
       '#title' => t('Title of the book'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 100,
       '#required' => TRUE,
       '#default_value' => $preference1_data->book,
@@ -292,7 +292,7 @@ class ProposalEditForm extends FormBase {
     $form['preference1']['author1'] = [
       '#type' => 'textfield',
       '#title' => t('Author Name'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 100,
       '#required' => TRUE,
       '#default_value' => $preference1_data->author,
@@ -300,7 +300,7 @@ class ProposalEditForm extends FormBase {
     $form['preference1']['isbn1'] = [
       '#type' => 'textfield',
       '#title' => t('ISBN No'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 25,
       '#required' => TRUE,
       '#default_value' => $preference1_data->isbn,
@@ -308,7 +308,7 @@ class ProposalEditForm extends FormBase {
     $form['preference1']['publisher1'] = [
       '#type' => 'textfield',
       '#title' => t('Publisher & Place'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 50,
       '#required' => TRUE,
       '#default_value' => $preference1_data->publisher,
@@ -316,7 +316,7 @@ class ProposalEditForm extends FormBase {
     $form['preference1']['edition1'] = [
       '#type' => 'textfield',
       '#title' => t('Edition'),
-      '#size' => 4,
+      // '#size' => 4,
       '#maxlength' => 2,
       '#required' => TRUE,
       '#default_value' => $preference1_data->edition,
@@ -324,7 +324,7 @@ class ProposalEditForm extends FormBase {
     $form['preference1']['year1'] = [
       '#type' => 'textfield',
       '#title' => t('Year of pulication'),
-      '#size' => 4,
+      // '#size' => 4,
       '#maxlength' => 4,
       '#required' => TRUE,
       '#default_value' => $preference1_data->year,
@@ -339,7 +339,7 @@ class ProposalEditForm extends FormBase {
       $form['preference2']['book2'] = [
         '#type' => 'textfield',
         '#title' => t('Title of the book'),
-        '#size' => 30,
+        // '#size' => 30,
         '#maxlength' => 100,
         '#required' => TRUE,
         '#default_value' => $preference2_data->book,
@@ -347,7 +347,7 @@ class ProposalEditForm extends FormBase {
       $form['preference2']['author2'] = [
         '#type' => 'textfield',
         '#title' => t('Author Name'),
-        '#size' => 30,
+        // '#size' => 30,
         '#maxlength' => 100,
         '#required' => TRUE,
         '#default_value' => $preference2_data->author,
@@ -355,7 +355,7 @@ class ProposalEditForm extends FormBase {
       $form['preference2']['isbn2'] = [
         '#type' => 'textfield',
         '#title' => t('ISBN No'),
-        '#size' => 30,
+        // '#size' => 30,
         '#maxlength' => 25,
         '#required' => TRUE,
         '#default_value' => $preference2_data->isbn,
@@ -363,7 +363,7 @@ class ProposalEditForm extends FormBase {
       $form['preference2']['publisher2'] = [
         '#type' => 'textfield',
         '#title' => t('Publisher & Place'),
-        '#size' => 30,
+        // '#size' => 30,
         '#maxlength' => 50,
         '#required' => TRUE,
         '#default_value' => $preference2_data->publisher,
@@ -371,7 +371,7 @@ class ProposalEditForm extends FormBase {
       $form['preference2']['edition2'] = [
         '#type' => 'textfield',
         '#title' => t('Edition'),
-        '#size' => 4,
+        // '#size' => 4,
         '#maxlength' => 2,
         '#required' => TRUE,
         '#default_value' => $preference2_data->edition,
@@ -379,7 +379,7 @@ class ProposalEditForm extends FormBase {
       $form['preference2']['year2'] = [
         '#type' => 'textfield',
         '#title' => t('Year of pulication'),
-        '#size' => 4,
+        // '#size' => 4,
         '#maxlength' => 4,
         '#required' => TRUE,
         '#default_value' => $preference2_data->year,
@@ -395,7 +395,7 @@ class ProposalEditForm extends FormBase {
       $form['preference3']['book3'] = [
         '#type' => 'textfield',
         '#title' => t('Title of the book'),
-        '#size' => 30,
+        // '#size' => 30,
         '#maxlength' => 100,
         '#required' => TRUE,
         '#default_value' => $preference3_data->book,
@@ -403,7 +403,7 @@ class ProposalEditForm extends FormBase {
       $form['preference3']['author3'] = [
         '#type' => 'textfield',
         '#title' => t('Author Name'),
-        '#size' => 30,
+        // '#size' => 30,
         '#maxlength' => 100,
         '#required' => TRUE,
         '#default_value' => $preference3_data->author,
@@ -411,7 +411,7 @@ class ProposalEditForm extends FormBase {
       $form['preference3']['isbn3'] = [
         '#type' => 'textfield',
         '#title' => t('ISBN No'),
-        '#size' => 30,
+        // '#size' => 30,
         '#maxlength' => 25,
         '#required' => TRUE,
         '#default_value' => $preference3_data->isbn,
@@ -419,7 +419,7 @@ class ProposalEditForm extends FormBase {
       $form['preference3']['publisher3'] = [
         '#type' => 'textfield',
         '#title' => t('Publisher & Place'),
-        '#size' => 30,
+        // '#size' => 30,
         '#maxlength' => 50,
         '#required' => TRUE,
         '#default_value' => $preference3_data->publisher,
@@ -427,7 +427,7 @@ class ProposalEditForm extends FormBase {
       $form['preference3']['edition3'] = [
         '#type' => 'textfield',
         '#title' => t('Edition'),
-        '#size' => 4,
+        // '#size' => 4,
         '#maxlength' => 2,
         '#required' => TRUE,
         '#default_value' => $preference3_data->edition,
@@ -435,7 +435,7 @@ class ProposalEditForm extends FormBase {
       $form['preference3']['year3'] = [
         '#type' => 'textfield',
         '#title' => t('Year of pulication'),
-        '#size' => 4,
+        // '#size' => 4,
         '#maxlength' => 4,
         '#required' => TRUE,
         '#default_value' => $preference3_data->year,

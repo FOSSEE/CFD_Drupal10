@@ -117,7 +117,7 @@ $form['experiment'] = [
        $form['solution_provider_name'] = [
          '#type' => 'textfield',
          '#title' => $this->t('Name of the Solution Provider'),
-         '#size' => 30,
+         // '#size' => 30,
          '#maxlength' => 50,
          '#required' => TRUE,
        ];
@@ -125,7 +125,7 @@ $form['experiment'] = [
        $form['solution_provider_email_id'] = [
          '#type' => 'textfield',
          '#title' => $this->t('Email'),
-         '#size' => 30,
+         // '#size' => 30,
         //  '#default_value' => $account->getEmail(),
         '#default_value' => $user_entity ? $user_entity->getEmail() : '',
          '#disabled' => TRUE,
@@ -134,7 +134,7 @@ $form['experiment'] = [
        $form['solution_provider_contact_ph'] = [
          '#type' => 'textfield',
          '#title' => $this->t('Contact No.'),
-         '#size' => 30,
+         // '#size' => 30,
          '#maxlength' => 15,
          '#required' => TRUE,
        ];
@@ -149,7 +149,7 @@ $form['experiment'] = [
        $form['solution_provider_university'] = [
          '#type' => 'textfield',
          '#title' => $this->t('University/Institute'),
-         '#size' => 30,
+         // '#size' => 30,
          '#maxlength' => 50,
          '#required' => TRUE,
        ];
@@ -167,7 +167,7 @@ $form['experiment'] = [
        $form['other_country'] = [
          '#type' => 'textfield',
          '#title' => $this->t('Other than India'),
-         '#size' => 100,
+         // '#size' => 100,
          '#attributes' => ['placeholder' => $this->t('Enter your country name')],
          '#states' => [
            'visible' => [
@@ -179,7 +179,7 @@ $form['experiment'] = [
        $form['other_state'] = [
          '#type' => 'textfield',
          '#title' => $this->t('State other than India'),
-         '#size' => 100,
+         // '#size' => 100,
          '#attributes' => ['placeholder' => $this->t('Enter your state/region name')],
          '#states' => [
            'visible' => [
@@ -191,7 +191,7 @@ $form['experiment'] = [
        $form['other_city'] = [
          '#type' => 'textfield',
          '#title' => $this->t('City other than India'),
-         '#size' => 100,
+         // '#size' => 100,
          '#attributes' => ['placeholder' => $this->t('Enter your city name')],
          '#states' => [
            'visible' => [
@@ -225,7 +225,7 @@ $form['experiment'] = [
        $form['pincode'] = [
          '#type' => 'textfield',
          '#title' => $this->t('Pincode'),
-         '#size' => 30,
+         // '#size' => 30,
          '#maxlength' => 6,
          '#attributes' => ['placeholder' => $this->t('Enter pincode....')],
        ];

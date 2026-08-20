@@ -20,7 +20,6 @@ use Drupal\Core\Render\BubbleableMetadata;
 use Drupal\Core\Render\RendererInterface;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\HtmlCommand;
-use Drupal\Core\Ajax\ReplaceCommand;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Render\Renderer;
 use Drupal\Core\Cache\CacheableMetadata;
@@ -72,19 +71,10 @@ class CfdResearchMigrationAbstractBulkApprovalForm extends FormBase {
       '#prefix' => '<div id= "message_submit">',
       '#states' => [
         'visible' => [
-          [
-            ':input[name="research_migration_actions"]' => [
-              'value' => 3
-              ]
-            ],
-          'or',
-          [
-            ':input[name="research_migration_actions"]' => [
-              'value' => 4
-              ]
-            ],
-        ]
+          [':input[name="research_migration_actions"]' => ['value' => '3']],
         ],
+      ],
+      '#suffix' => '</div>',
     ];
     $form['submit'] = [
       '#type' => 'submit',
@@ -107,10 +97,6 @@ function ajax_bulk_research_migration_abstract_details_callback(array &$form, Fo
     // Update research migration details.
     $response->addCommand(new HtmlCommand('#ajax_selected_research_migration', $this->_research_migration_details($research_migration_project_default_value)));
 
-    // Update actions dropdown options.
-    $form['research_migration_actions']['#options'] = $this->_bulk_list_research_migration_actions();
-    $renderer = \Drupal::service('renderer');
-    $response->addCommand(new ReplaceCommand('#ajax_selected_research_migration_action', $renderer->render($form['research_migration_actions'])));
   } 
   else {
     // Clear research migration details and update form state.

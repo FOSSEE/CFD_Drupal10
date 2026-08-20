@@ -1,0 +1,58 @@
+'Coursework Project add project titles':
+  title: 'Coursework Project add project titles'
+  'restrict access': true
+'Coursework Project create proposal':
+  title: 'Coursework Project create proposal'
+  'restrict access': true
+'Coursework Project manage proposal':
+  title: 'Coursework Project manage proposal'
+  'restrict access': true
+'Coursework Project edit proposal':
+  title: 'Coursework Project edit proposal'
+  'restrict access': true
+'Coursework Project approve proposal':
+  title: 'Coursework Project approve proposal'
+  'restrict access': true
+'Coursework Project propose solution':
+  title: 'Coursework Project propose solution'
+  'restrict access': true
+'Coursework Project titles list':
+  title: 'Coursework Project titles list'
+  'restrict access': true
+'Coursework Project approve abstract':
+  title: 'Coursework Project approve code'
+  'restrict access': true
+'Coursework Project bulk manage abstract':
+  title: 'Coursework Project bulk manage abstract'
+  'restrict access': true
+'Coursework Project bulk delete abstract':
+  title: 'Coursework Project bulk delete code'
+  'restrict access': true
+'Coursework Project upload abstract':
+  title: 'Coursework Project upload code'
+  'restrict access': true
+'Coursework Project download code':
+  title: 'Coursework Project download code'
+  'restrict access': true
+'administer Coursework Project':
+  title: 'Administer Coursework Project'
+  'restrict access': true
+'Coursework Project generate abstract':
+  title: 'Coursework Project generate abstract'
+  'restrict access': true
+'list Coursework Project certificates':
+  title: 'list the certificates'
+  description: 'list the certificates'
+  'restrict access': true
+'list Coursework Project custom certificates':
+  title: 'list the mentor certificates'
+  description: 'list the mentor certificates'
+  'restrict access': true
+'Coursework Project generate PDF':
+  title: 'Generate Coursework Project certificates'
+  description: 'Generate Coursework Project certificate PDFs'
+  'restrict access': true
+'Coursework Project verify certificates':
+  title: 'Verify Coursework Project certificates'
+  description: 'Verify Coursework Project certificates'
+  'restrict access': true

@@ -1,0 +1,66 @@
+cfd_coursework_project.add_project_title_form:
+  route_name: cfd_coursework_project.add_project_title_form
+  title: 'Add new project titles'
+  description: 'Add new project titles'
+cfd_coursework_project.proposal_form:
+  route_name: cfd_coursework_project.proposal_form
+  title: 'Coursework Project Proposal Form'
+  description: 'Coursework Project Proposal Form'
+cfd_coursework_project.proposal_pending:
+  route_name: cfd_coursework_project.proposal_pending
+  title: 'Manage Coursework Project Proposals'
+  description: 'Manage Coursework ProjectProposals'
+cfd_coursework_project.proposal_pending_0:
+  route_name: cfd_coursework_project.proposal_pending
+  title: 'Pending Proposals'
+  weight: 1
+  description: 'Pending Coursework Project Proposals Queue'
+cfd_coursework_project.proposal_all:
+  route_name: cfd_coursework_project.proposal_all
+  title: 'All Proposals'
+  weight: 4
+  description: 'All Proposals'
+cfd_coursework_project.proposal_edit_file_all:
+  route_name: cfd_coursework_project.proposal_edit_file_all
+  title: 'Edit code files'
+  weight: 4
+  description: 'Edit code files'
+cfd_coursework_project.abstract_bulk_approval_form:
+  route_name: cfd_coursework_project.abstract_bulk_approval_form
+  title: 'Manage Coursework Project Submissions'
+  weight: 2
+  description: 'Bulk Mangage'
+cfd_coursework_project.abstract:
+  route_name: cfd_coursework_project.abstract
+  title: 'Coursework Project Submissions'
+  description: 'Abstract Submission'
+cfd_coursework_project.upload_abstract_code_form:
+  route_name: cfd_coursework_project.upload_abstract_code_form
+  title: 'Coursework Project Submissions'
+  weight: 2
+  description: 'Project Upload'
+  parent: cfd_coursework_project.abstract
+cfd_coursework_project.completed_proposals_all:
+  route_name: cfd_coursework_project.completed_proposals_all
+  title: 'Completed Coursework projects'
+cfd_coursework_project.progress_all:
+  route_name: cfd_coursework_project.progress_all
+  title: 'Coursework projects in Progress'
+cfd_coursework_project.list_of_available_project_titles:
+  route_name: cfd_coursework_project.list_of_available_project_titles
+  title: 'List of available Project titles'
+cfd_coursework_project.run_form:
+  route_name: cfd_coursework_project.run_form
+  title: 'Download Codes'
+cfd_coursework_project.settings_form:
+  route_name: cfd_coursework_project.settings_form
+  title: 'Coursework Project Settings'
+  description: 'Coursework Project Settings'
+cfd_coursework_project._list_coursework_project_certificates:
+  route_name: cfd_coursework_project._list_coursework_project_certificates
+  title: 'List of Coursework Project Certificates'
+  description: 'List of Coursework Project Certificates'
+cfd_coursework_project.verify_certificates_verify_certificates:
+  route_name: cfd_coursework_project.verify_certificates_verify_certificates
+  title: 'Certificate Verification'
+  parent: cfd_coursework_project._list_coursework_project_certificates
