@@ -104,7 +104,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['name'] = [
       '#type' => 'textfield',
       '#title' => t('Name of the Proposer'),
-      '#size' => 100,
+      // '#size' => 100,
       '#attributes' => [
         'placeholder' => t('Enter your full name')
         ],
@@ -114,14 +114,14 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['email_id'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Email'),
-      '#size' => 30,
+      // '#size' => 30,
       '#value' =>  $user ? $user->getEmail() : '',
       '#disabled' => TRUE,
     ];
     $form['contact_ph'] = [
       '#type' => 'textfield',
       '#title' => t('Contact No.'),
-      '#size' => 30,
+      // '#size' => 30,
       '#attributes' => [
         'placeholder' => t('Enter your contact number')
         ],
@@ -137,7 +137,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['university'] = [
       '#type' => 'textfield',
       '#title' => t('University/ Institute'),
-      '#size' => 80,
+      // '#size' => 80,
       '#maxlength' => 200,
       '#required' => TRUE,
       '#attributes' => [
@@ -158,7 +158,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['other_country'] = [
       '#type' => 'textfield',
       '#title' => t('Other than India'),
-      '#size' => 100,
+      // '#size' => 100,
       '#attributes' => [
         'placeholder' => t('Enter your country name')
         ],
@@ -173,7 +173,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['other_state'] = [
       '#type' => 'textfield',
       '#title' => t('State other than India'),
-      '#size' => 100,
+      // '#size' => 100,
       '#attributes' => [
         'placeholder' => t('Enter your state/region name')
         ],
@@ -188,7 +188,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['other_city'] = [
       '#type' => 'textfield',
       '#title' => t('City other than India'),
-      '#size' => 100,
+      // '#size' => 100,
       '#attributes' => [
         'placeholder' => t('Enter your city name')
         ],
@@ -228,7 +228,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['pincode'] = [
       '#type' => 'textfield',
       '#title' => t('Pincode'),
-      '#size' => 30,
+      // '#size' => 30,
       '#maxlength' => 6,
       '#required' => FALSE,
       '#attributes' => [
@@ -243,7 +243,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['lab_title'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Title of the Lab'),
-      '#size' => 50,
+      // '#size' => 50,
       '#maxlength' => 255,
       '#required' => TRUE,
     ];
@@ -254,7 +254,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
           '#type' => 'textfield',
           '#attributes' => array('class' => array('form-control')),
           '#title' => t('Title of the Experiment ') . $counter,
-          '#size' => 100,
+          // '#size' => 100,
           '#required' => TRUE,
         ];
         $namefield = "lab_experiment-" . $counter;
@@ -282,7 +282,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
           '#type' => 'textfield',
           '#attributes' => array('class' => array('form-control')),
           '#title' => t('Title of the Experiment ') . $counter,
-          '#size' => 50,
+          // '#size' => 50,
           '#required' => FALSE,
         ];
         $namefield = "lab_experiment-" . $counter;
@@ -338,7 +338,7 @@ $response = new RedirectResponse(Url::fromRoute('<front>')->toString());
     $form['problem_statement']['ps_file'] = [
       '#type' => 'file',
       '#title' => t('<span style="color:red;font-weight:bold">NOTE: </span>Please upload a Problem Statement for each experiment proposed in a document format. To view the template of the document please click <a href="https://cfd.fossee.in/sites/default/files/Problem_Statement_Template.doc" target="_blank">here</a>'),
-      '#size' => 48,
+      // '#size' => 48,
       '#description' => $this->t('Only alphabets and numbers are allowed as a valid filename.') . '<br />' . $this->t('Allowed file extensions: ') . 
       $config->get('lab_migration_problem_statement_extensions', ''),
     ];

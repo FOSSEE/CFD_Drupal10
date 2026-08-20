@@ -13,7 +13,6 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\HtmlCommand;
-use Drupal\Core\Ajax\ReplaceCommand;
 use Drupal\Core\Link;
 use Drupal\Core\Url;
 
@@ -66,15 +65,10 @@ class CfdCaseStudyAbstractBulkApprovalForm extends FormBase {
       '#prefix' => '<div id= "message_submit">',
       '#states' => [
         'visible' => [
-          [
-            ':input[name="case_study_actions"]' => [
-              'value' => 3
-              ]
-            ],
-          'or',
-          [':input[name="case_study_actions"]' => ['value' => 4]],
-        ]
+          [':input[name="case_study_actions"]' => ['value' => '3']],
         ],
+      ],
+      '#suffix' => '</div>',
     ];
     $form['submit'] = [
       '#type' => 'submit',
@@ -97,7 +91,6 @@ class CfdCaseStudyAbstractBulkApprovalForm extends FormBase {
     $case_study_project_default_value = $form_state->getValue('case_study_project');
     if ($case_study_project_default_value) {
       $response->addCommand(new HtmlCommand('#ajax_selected_case_study', $this->buildCaseStudyDetailsMarkup($case_study_project_default_value)));
-      $response->addCommand(new ReplaceCommand('#ajax_selected_case_study_action', $form['case_study_actions']));
     }
     else {
       $response->addCommand(new HtmlCommand('#ajax_selected_case_study', ''));

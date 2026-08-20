@@ -25,7 +25,7 @@ class TextbookCompanionSearchForm extends FormBase {
     $form['search'] = [
       '#type' => 'textfield',
       '#title' => t('Search'),
-      '#size' => 48,
+      // '#size' => 48,
     ];
     $form['search_by_title'] = [
       '#type' => 'checkbox',

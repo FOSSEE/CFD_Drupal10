@@ -100,14 +100,14 @@ $response->send();
       '#title' => t('Title of the Experiment'),
       '#options' => $experiment_rows,
       '#multiple' => FALSE,
-      '#size' => 1,
+      // '#size' => 1,
       '#required' => TRUE,
     ];
 // var_dump($form);die;
     $form['code_number'] = [
       '#type' => 'textfield',
       '#title' => t('Code No'),
-      '#size' => 5,
+      // '#size' => 5,
       '#maxlength' => 10,
       '#description' => t(""),
       '#required' => TRUE,
@@ -115,7 +115,7 @@ $response->send();
     $form['code_caption'] = [
       '#type' => 'textfield',
       '#title' => t('Caption'),
-      '#size' => 40,
+      // '#size' => 40,
       '#maxlength' => 255,
       '#description' => t(''),
       '#required' => TRUE,
@@ -164,7 +164,7 @@ $response->send();
     $form['sourcefile']['sourcefile1'] = [
       '#type' => 'file',
       '#title' => t('Upload main or source file'),
-      '#size' => 48,
+      // '#size' => 48,
       '#description' => t('Only alphabets and numbers are allowed as a valid filename.') . '<br />' . t('Allowed file extensions: ') .$extensions
 ,
     ];
@@ -178,14 +178,14 @@ $response->send();
   $form['result']['result1'] = array(
       '#type' => 'file',
       '#title' => t('Upload result file'),
-      '#size' => 48,
+      // '#size' => 48,
       '#description' => t('Separate filenames with underscore. No spaces or any special characters allowed in filename.') . '<br />' .
       t('Allowed file extensions: ') . $config->get('lab_migration_result_extensions', ''),
   );
   $form['result']['result2'] = array(
       '#type' => 'file',
       '#title' => t('Upload result file'),
-      '#size' => 48,
+      // '#size' => 48,
       '#description' => t('Separate filenames with underscore. No spaces or any special characters allowed in filename.') . '<br />' .
       t('Allowed file extensions: ') . $config->get('lab_migration_result_extensions', ''),
   );
@@ -199,14 +199,14 @@ $response->send();
   $form['xcos']['xcos1'] = array(
       '#type' => 'file',
       '#title' => t('Upload xcos file'),
-      '#size' => 48,
+      // '#size' => 48,
       '#description' => t('Separate filenames with underscore. No spaces or any special characters allowed in filename.') . '<br />' .
       t('Allowed file extensions: ') . $config->get('lab_migration_xcos_extensions', ''),
   );
   $form['xcos']['xcos2'] = array(
       '#type' => 'file',
       '#title' => t('Upload xcos file'),
-      '#size' => 48,
+      // '#size' => 48,
       '#description' => t('Separate filenames with underscore. No spaces or any special characters allowed in filename.') . '<br />' .
       t('Allowed file extensions: ') . $config->get('lab_migration_xcos_extensions', ''),
   );
@@ -223,7 +223,7 @@ $extensions = $config->get('lab_migration_result_pdf_extensions') ?? '';
 $form['result']['result1'] = [
   '#type' => 'file',
   '#title' => $this->t('Upload result file. To view the template for result submission please click <a href="https://cfd.fossee.in/sites/default/files/Template_For_Result.doc" target="_blank">here</a>.'),
-  '#size' => 48,
+  // '#size' => 48,
   '#description' => $this->t('Separate filenames with underscore. No spaces or any special characters allowed in filename.') . '<br />' .
                     $this->t('Allowed file extensions: ') . \Drupal::config('lab_migration.settings')->get('lab_migration_result_pdf_extensions'),
 ];
@@ -231,7 +231,7 @@ $extensions = $config->get('lab_migration_result_extensions') ?? '';
 $form['result']['result2'] = [
   '#type' => 'file',
   '#title' => $this->t('Upload result file'),
-  '#size' => 48,
+  // '#size' => 48,
   '#description' => $this->t('Separate filenames with underscore. No spaces or any special characters allowed in filename.') . '<br />' .
                     $this->t('Allowed file extensions: ') . $extensions,
 ];

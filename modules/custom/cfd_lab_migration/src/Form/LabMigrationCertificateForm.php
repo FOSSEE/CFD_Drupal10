@@ -42,7 +42,7 @@ class LabMigrationCertificateForm extends FormBase {
     $form['email_id'] = [
       '#type' => 'textfield',
       '#title' => t('Email'),
-      '#size' => 50,
+      // '#size' => 50,
     ];
     $form['institute_name'] = [
       '#type' => 'textfield',

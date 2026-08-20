@@ -1784,7 +1784,7 @@ return $this->redirect('textbook_companion.run_form', ['book_pref_id' => $book_i
     $form['search_cheque'] = [
       '#type' => 'textfield',
       '#title' => t('Search'),
-      '#size' => 48,
+      // '#size' => 48,
     ];
     $form['submit_cheque'] = [
       '#type' => 'submit',

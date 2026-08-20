@@ -1,0 +1,17 @@
+cfd_coursework_project.proposal_pending_tab:
+  route_name: cfd_coursework_project.proposal_pending
+  title: 'Pending proposals'
+  base_route: cfd_coursework_project.proposal_pending
+  weight: 0
+
+cfd_coursework_project.proposal_all_tab:
+  route_name: cfd_coursework_project.proposal_all
+  title: 'All proposals'
+  base_route: cfd_coursework_project.proposal_pending
+  weight: 1
+
+cfd_coursework_project.proposal_edit_file_all_tab:
+  route_name: cfd_coursework_project.proposal_edit_file_all
+  title: 'Edit code files'
+  base_route: cfd_coursework_project.proposal_pending
+  weight: 2

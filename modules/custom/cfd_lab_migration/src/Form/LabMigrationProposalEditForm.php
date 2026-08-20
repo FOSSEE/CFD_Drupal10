@@ -253,7 +253,7 @@ $form['email_id'] = [
         /*$form['lab_experiment_']['update'][$experiment_data->id] = array(
             '#type' => 'textfield',
             '#title' => t('Title of the Experiment ') . $counter,
-            '#size' => 50,
+            // '#size' => 50,
             '#required' => FALSE,
             
             '#default_value' => $experiment_title,

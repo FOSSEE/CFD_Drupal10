@@ -126,27 +126,27 @@ class ContactDetails extends FormBase {
     $form['candidate_detail']['fullname'] = [
       '#type' => 'textfield',
       '#title' => t('Full Name'),
-      '#size' => 48,
+      // '#size' => 48,
       '#default_value' => $full_name,
     ];
     $form['candidate_detail']['email'] = [
       '#type' => 'textfield',
       '#title' => t('Email'),
-      '#size' => 48,
+      // '#size' => 48,
       '#value' => $user->mail,
       '#disabled' => TRUE,
     ];
     $form['candidate_detail']['mobileno1'] = [
       '#type' => 'textfield',
       '#title' => t('Mobile No'),
-      '#size' => 48,
+      // '#size' => 48,
       '#default_value' => $mob_no,
     ];
 
     $form['candidate_detail']['mobileno2'] = [
       '#type' => 'textfield',
       '#title' => t('Alternate Mobile No'),
-      '#size' => 48,
+      // '#size' => 48,
       '#default_value' => $form8,
     ];
 
@@ -218,50 +218,50 @@ class ContactDetails extends FormBase {
     $form['perm_cheque_address']['chq_address'] = [
       '#type' => 'textarea',
       '#title' => t('Address'),
-      '#size' => 35,
+      // '#size' => 35,
       '#default_value' => $form1,
     ];
     $form['perm_cheque_address']['perm_city'] = [
       '#type' => 'textfield',
       '#default_value' => $form9,
       '#title' => t('City'),
-      '#size' => 35,
+      // '#size' => 35,
     ];
     $form['perm_cheque_address']['perm_state'] = [
       '#type' => 'textfield',
       '#default_value' => $form10,
       '#title' => t('State'),
-      '#size' => 35,
+      // '#size' => 35,
     ];
     $form['perm_cheque_address']['perm_pincode'] = [
       '#type' => 'textfield',
       '#default_value' => $form11,
       '#title' => t('Zip code'),
-      '#size' => 35,
+      // '#size' => 35,
     ];
     $form['temp_cheque_address']['temp_chq_address'] = [
       '#type' => 'textarea',
       '#default_value' => $form12,
       '#title' => t('Address'),
-      '#size' => 35,
+      // '#size' => 35,
     ];
     $form['temp_cheque_address']['temp_city'] = [
       '#type' => 'textfield',
       '#default_value' => $form13,
       '#title' => t('City'),
-      '#size' => 35,
+      // '#size' => 35,
     ];
     $form['temp_cheque_address']['temp_state'] = [
       '#type' => 'textfield',
       '#default_value' => $form14,
       '#title' => t('State'),
-      '#size' => 35,
+      // '#size' => 35,
     ];
     $form['temp_cheque_address']['temp_pincode'] = [
       '#type' => 'textfield',
       '#default_value' => $form15,
       '#title' => t('Zip code'),
-      '#size' => 35,
+      // '#size' => 35,
     ];
     $form['temp_cheque_address']['same_address'] = [
       '#type' => 'checkbox',
@@ -279,7 +279,7 @@ class ContactDetails extends FormBase {
       ];
       $form['commentu']['comment_cheque'] = [
         '#type' => 'textarea',
-        '#size' => 35,
+        // '#size' => 35,
         '#default_value' => $form16,
       ];
     }

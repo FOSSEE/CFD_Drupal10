@@ -1,0 +1,25 @@
+cfd_coursework_project.settings:
+  type: config_object
+  label: 'Coursework Project settings'
+  mapping:
+    coursework_project_emails:
+      type: string
+      label: 'BCC notification email addresses'
+    coursework_project_cc_emails:
+      type: string
+      label: 'CC notification email addresses'
+    coursework_project_from_email:
+      type: email
+      label: 'Outgoing email address'
+    resource_upload_extensions:
+      type: string
+      label: 'Allowed resource-file extensions'
+    abstract_upload_extensions:
+      type: string
+      label: 'Allowed abstract-file extensions'
+    coursework_project_upload_extensions:
+      type: string
+      label: 'Allowed Coursework Project file extensions'
+    list_of_available_projects_file_extensions:
+      type: string
+      label: 'Allowed project-title resource extensions'
