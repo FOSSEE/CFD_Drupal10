@@ -572,9 +572,22 @@ class CfdCourseworkProjectProposalForm extends FormBase {
     if (!in_array($temp_extension, $allowed_extensions, TRUE)) {
       $form_state->setErrorByName('abstract_file_path', t('Only file with ' . $allowed_extensions_str . ' extensions can be uploaded.'));
     }
-    if ($upload->getSize() <= 0) {
-      $form_state->setErrorByName('abstract_file_path', t('File size cannot be zero.'));
+
+    $max_file_size = 5 * 1024 * 1024; // 5 MB in bytes.
+    $uploaded_file_size = $upload->getSize();
+    if ($uploaded_file_size <= 0) {
+      $form_state->setErrorByName(
+        'abstract_file_path',
+        $this->t('File size cannot be zero.')
+      );
     }
+    elseif ($uploaded_file_size > $max_file_size) {
+      $form_state->setErrorByName(
+        'abstract_file_path',
+        $this->t('The abstract file must not exceed 5 MB.')
+      );
+    }
+    
     if (!cfd_coursework_project_check_valid_filename($original_name)) {
       $form_state->setErrorByName('abstract_file_path', t('Invalid file name specified. Only alphabets and numbers are allowed as a valid filename.'));
     }
